@@ -13,31 +13,52 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- carousel CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <section class="filter_Sec">
       <div class="bg_img"><img src="./img/bgImg.jpg" /></div>
       <div class="container">
         <div class="slide_content">
-            <div class="home_subtitle">super offer</div>
-            <div class="home_title">Villa with sea view</div>
-            <div class="home_details">
+          <div class="home_subtitle">super offer</div>
+          <div class="home_title">Villa with sea view</div>
+          <div class="home_details">
             <ul class="home_details_list">
-            <li>
-            <div class="home_details_image"><img src="img/icon_1.png.webp" alt=""></div>
-            <span> 650 Ftsq</span>
-            </li>
-            <li>
-            <div class="home_details_image"><img src="img/icon_2.png.webp" alt=""></div>
-            <span> 3 Bedrooms</span>
-            </li>
-            <li>
-            <div class="home_details_image"><img src="img/icon_3.png.webp" alt=""></div>
-            <span> 2 Bathrooms</span>
-            </li>
+              <li>
+                <div class="home_details_image">
+                  <img src="img/icon_1.png.webp" alt="" />
+                </div>
+                <span> 650 Ftsq</span>
+              </li>
+              <li>
+                <div class="home_details_image">
+                  <img src="img/icon_2.png.webp" alt="" />
+                </div>
+                <span> 3 Bedrooms</span>
+              </li>
+              <li>
+                <div class="home_details_image">
+                  <img src="img/icon_3.png.webp" alt="" />
+                </div>
+                <span> 2 Bathrooms</span>
+              </li>
             </ul>
-            </div>
-            </div>
+          </div>
+        </div>
         <div class="home_search_container">
           <div class="home_search_content">
             <form action="#" class="search_form">
@@ -58,7 +79,7 @@
                     <option>Type 4</option>
                   </select>
                 </div>
-                <div>                 
+                <div>
                   <input
                     type="text"
                     placeholder="search for Place"
@@ -80,6 +101,7 @@
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
+                    <option>4</option>
                   </select>
                 </div>
               </div>
@@ -107,9 +129,7 @@
                 </div>
                 <div class="recent_item_price">$ 1. 234 981</div>
               </div>
-              <div
-                class="recent_item_footer "
-              >
+              <div class="recent_item_footer">
                 <div>
                   <div class="recent_icon">
                     <img src="img/icon_1.png.webp" alt="" />
@@ -139,16 +159,14 @@
                   <a href="#">Featured</a>
                 </div>
               </div>
-              <div class="recent_item_body ">
+              <div class="recent_item_body">
                 <div class="recent_item_location">Florida</div>
                 <div class="recent_item_title">
                   <a href="#">Vacation Home</a>
                 </div>
                 <div class="recent_item_price">$ 1. 234 981</div>
               </div>
-              <div
-                class="recent_item_footer "
-              >
+              <div class="recent_item_footer">
                 <div>
                   <div class="recent_icon">
                     <img src="img/icon_1.png.webp" alt="" />
@@ -172,38 +190,76 @@
           </div>
           <div class="recent_item">
             <div class="recent_item_inner">
-            <div class="recent_item_image">
-            <img src="img/img3.webp" alt="">
-            <div class="tag_featured property_tag"><a href="#">Featured</a></div>
-            </div>
-            <div class="recent_item_body text-center">
-            <div class="recent_item_location">Miami</div>
-            <div class="recent_item_title"><a href="#">Sea view property</a></div>
-            <div class="recent_item_price">$ 1. 234 981</div>
-            </div>
-            <div class="recent_item_footer ">
-            <div><div class="recent_icon"><img src="img/icon_1.png.webp" alt=""></div><span>650 Ftsq</span></div>
-            <div><div class="recent_icon"><img src="img/icon_2.png.webp" alt=""></div><span>3 Bedrooms</span></div>
-            <div><div class="recent_icon"><img src="img/icon_3.png.webp" alt=""></div><span>3 Bathrooms</span></div>
-            </div>
+              <div class="recent_item_image">
+                <img src="img/img3.webp" alt="" />
+                <div class="tag_featured property_tag">
+                  <a href="#">Featured</a>
+                </div>
+              </div>
+              <div class="recent_item_body text-center">
+                <div class="recent_item_location">Miami</div>
+                <div class="recent_item_title">
+                  <a href="#">Sea view property</a>
+                </div>
+                <div class="recent_item_price">$ 1. 234 981</div>
+              </div>
+              <div class="recent_item_footer">
+                <div>
+                  <div class="recent_icon">
+                    <img src="img/icon_1.png.webp" alt="" />
+                  </div>
+                  <span>650 Ftsq</span>
+                </div>
+                <div>
+                  <div class="recent_icon">
+                    <img src="img/icon_2.png.webp" alt="" />
+                  </div>
+                  <span>3 Bedrooms</span>
+                </div>
+                <div>
+                  <div class="recent_icon">
+                    <img src="img/icon_3.png.webp" alt="" />
+                  </div>
+                  <span>3 Bathrooms</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="recent_item">
             <div class="recent_item_inner">
-            <div class="recent_item_image">
-            <img src="img/img3.webp" alt="">
-            <div class="tag_featured property_tag"><a href="#">Featured</a></div>
-            </div>
-            <div class="recent_item_body text-center">
-            <div class="recent_item_location">Miami</div>
-            <div class="recent_item_title"><a href="#">Sea view property</a></div>
-            <div class="recent_item_price">$ 1. 234 981</div>
-            </div>
-            <div class="recent_item_footer ">
-            <div><div class="recent_icon"><img src="img/icon_1.png.webp" alt=""></div><span>650 Ftsq</span></div>
-            <div><div class="recent_icon"><img src="img/icon_2.png.webp" alt=""></div><span>3 Bedrooms</span></div>
-            <div><div class="recent_icon"><img src="img/icon_3.png.webp" alt=""></div><span>3 Bathrooms</span></div>
-            </div>
+              <div class="recent_item_image">
+                <img src="img/img3.webp" alt="" />
+                <div class="tag_featured property_tag">
+                  <a href="#">Featured</a>
+                </div>
+              </div>
+              <div class="recent_item_body text-center">
+                <div class="recent_item_location">Miami</div>
+                <div class="recent_item_title">
+                  <a href="#">Sea view property</a>
+                </div>
+                <div class="recent_item_price">$ 1. 234 981</div>
+              </div>
+              <div class="recent_item_footer">
+                <div>
+                  <div class="recent_icon">
+                    <img src="img/icon_1.png.webp" alt="" />
+                  </div>
+                  <span>650 Ftsq</span>
+                </div>
+                <div>
+                  <div class="recent_icon">
+                    <img src="img/icon_2.png.webp" alt="" />
+                  </div>
+                  <span>3 Bedrooms</span>
+                </div>
+                <div>
+                  <div class="recent_icon">
+                    <img src="img/icon_3.png.webp" alt="" />
+                  </div>
+                  <span>3 Bathrooms</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="recent_item">
@@ -221,9 +277,7 @@
                 </div>
                 <div class="recent_item_price">$ 1. 234 981</div>
               </div>
-              <div
-                class="recent_item_footer "
-              >
+              <div class="recent_item_footer">
                 <div>
                   <div class="recent_icon">
                     <img src="img/icon_1.png.webp" alt="" />
@@ -253,16 +307,14 @@
                   <a href="#">Featured</a>
                 </div>
               </div>
-              <div class="recent_item_body ">
+              <div class="recent_item_body">
                 <div class="recent_item_location">Florida</div>
                 <div class="recent_item_title">
                   <a href="#">Vacation Home</a>
                 </div>
                 <div class="recent_item_price">$ 1. 234 981</div>
               </div>
-              <div
-                class="recent_item_footer "
-              >
+              <div class="recent_item_footer">
                 <div>
                   <div class="recent_icon">
                     <img src="img/icon_1.png.webp" alt="" />
@@ -287,6 +339,299 @@
         </div>
       </div>
     </section>
-    <script src="./js/script.js"></script>
+    <section class="findProperty">
+      <div class="container">
+        <div class="colSec">
+          <div class="section_title">Find properties in these cities</div>
+          <div class="section_subtitle">Search your dream home</div>
+        </div>
+        <div class="cities_container">
+          <div class="city">
+            <img src="/img/city_1.jpg.webp" alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $411/month</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="city">
+            <img src="/img/city_2.jpg" alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $433/month</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="city">
+            <img src="/img/city_3.jpg " alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $440/month</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="city">
+            <img src="/img/city_4.jpg" alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $650/month</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="city">
+            <img src="/img/city_2.jpg" alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $150/month</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="city">
+            <img src="/img/city_3.jpg" alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $550/month</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="city">
+            <img src="/img/city_4.jpg" alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $350/month</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="city">
+            <img src="/img/city_1.jpg.webp" alt="city" />
+            <div class="city_overlay">
+              <a href="#" class="d-flex">
+                <div class="city_title">Ibiza Town</div>
+                <div class="city_subtitle">Rentals from $450/month</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="carousel_Sec">
+      <div class="container">
+        <div class="col">
+          <div class="section_title">Recent Properties</div>
+          <div class="section_subtitle">Search your dream home</div>
+          </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="recent_item">
+              <div class="recent_item_inner">
+                <div class="recent_item_image">
+                  <img src="img/img1.jpg" alt="" />
+                  <div class="tag_offer property_tag">
+                    <a href="#">Offer</a>
+                  </div>
+                </div>
+                <div class="recent_item_body text-center">
+                  <div class="recent_item_location">Miami</div>
+                  <div class="recent_item_title">
+                    <a href="#">Sea view property</a>
+                  </div>
+                  <div class="recent_item_price">$ 1. 234 981</div>
+                </div>
+                <div class="recent_item_footer">
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_1.png.webp" alt="" />
+                    </div>
+                    <span>650 Ftsq</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_2.png.webp" alt="" />
+                    </div>
+                    <span>3 Bedrooms</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_3.png.webp" alt="" />
+                    </div>
+                    <span>3 Bathrooms</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="recent_item">
+              <div class="recent_item_inner">
+                <div class="recent_item_image">
+                  <img src="img/img2.webp" alt="" />
+                  <div class="tag_featured property_tag">
+                    <a href="#">Featured</a>
+                  </div>
+                </div>
+                <div class="recent_item_body">
+                  <div class="recent_item_location">Florida</div>
+                  <div class="recent_item_title">
+                    <a href="#">Vacation Home</a>
+                  </div>
+                  <div class="recent_item_price">$ 1. 234 981</div>
+                </div>
+                <div class="recent_item_footer">
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_1.png.webp" alt="" />
+                    </div>
+                    <span>650 Ftsq</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_2.png.webp" alt="" />
+                    </div>
+                    <span>3 Bedrooms</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_3.png.webp" alt="" />
+                    </div>
+                    <span>3 Bathrooms</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="recent_item">
+              <div class="recent_item_inner">
+                <div class="recent_item_image">
+                  <img src="img/img3.webp" alt="" />
+                  <div class="tag_featured property_tag">
+                    <a href="#">Featured</a>
+                  </div>
+                </div>
+                <div class="recent_item_body text-center">
+                  <div class="recent_item_location">Miami</div>
+                  <div class="recent_item_title">
+                    <a href="#">Sea view property</a>
+                  </div>
+                  <div class="recent_item_price">$ 1. 234 981</div>
+                </div>
+                <div class="recent_item_footer">
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_1.png.webp" alt="" />
+                    </div>
+                    <span>650 Ftsq</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_2.png.webp" alt="" />
+                    </div>
+                    <span>3 Bedrooms</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_3.png.webp" alt="" />
+                    </div>
+                    <span>3 Bathrooms</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="recent_item">
+              <div class="recent_item_inner">
+                <div class="recent_item_image">
+                  <img src="img/img2.webp" alt="" />
+                  <div class="tag_featured property_tag">
+                    <a href="#">Featured</a>
+                  </div>
+                </div>
+                <div class="recent_item_body">
+                  <div class="recent_item_location">Florida</div>
+                  <div class="recent_item_title">
+                    <a href="#">Vacation Home</a>
+                  </div>
+                  <div class="recent_item_price">$ 1. 234 981</div>
+                </div>
+                <div class="recent_item_footer">
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_1.png.webp" alt="" />
+                    </div>
+                    <span>650 Ftsq</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_2.png.webp" alt="" />
+                    </div>
+                    <span>3 Bedrooms</span>
+                  </div>
+                  <div>
+                    <div class="recent_icon">
+                      <img src="img/icon_3.png.webp" alt="" />
+                    </div>
+                    <span>3 Bathrooms</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/js/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- owl carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 20,
+          nav: true,
+          autoplay:true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 3,
+            },
+            1400: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
